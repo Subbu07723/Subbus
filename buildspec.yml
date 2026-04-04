@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing...
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+  build:
+    commands:
+      - echo Build started
+      - docker build -t my-app .
+      - docker tag my-app:latest <account-id>.dkr.ecr.ap-south-1.amazonaws.com/my-app:latest
+  post_build:
+    commands:
+      - echo Pushing image...
+      - docker push <account-id>.dkr.ecr.ap-south-1.amazonaws.com/my-app:latest
