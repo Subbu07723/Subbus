@@ -292,3 +292,18 @@ java -version
 sudo systemctl restart jenkins
 sudo systemctl status jenkins
 clear
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Subbu07723/Laksh.git
+git branch -M main
+git push -u origin main
+git branch -M main
+git push -u origin main
+git remote add origin https://github.com/Subbu07723/Subbus.git
+git remote add origin https://github.com/Subbu07723/laks.git
+git branch -M main
+git push -u origin main
+git push -M main
+git branch -M main
+git push -u origin main
