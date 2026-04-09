@@ -307,3 +307,225 @@ git push -u origin main
 git push -M main
 git branch -M main
 git push -u origin main
+clear
+ssh-keygen -t ed25519 -C  subbulakshmisenthilmurugan@gmail.com
+clear
+ssh-keygen -t ed25519 -C "subbulakshmisenthilmurugan@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+clear
+ls ~/.ssh
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+git push -u origin main
+clear
+git remote set-url origin git@github.com:Subbu07723/Laksh.git
+git remote -v
+git push -u origin main
+git remote set-url origin git@github.com:subbu07723/Subbus.git
+git remote -V
+git remote -v
+git push -u origin main
+git pull origin main --rebase
+git push -u origin main
+git status
+clear
+git branch -M main
+git push -u origin main
+clear
+git remote add origin https://github.com/Subbu07723/Subbus.git
+git branch -M main
+git push -u origin main
+clear
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Subbu07723/Subbus.git
+git branch -M main
+git push -u origin main
+clear
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl status docker
+nano dockerfile
+clear
+nano pythonfile
+docker build -t my-app .
+sudo apt install npm
+clear
+nano Node.js
+cd my-app
+ls
+find . -name "package.json"
+./Node.js/package.json
+cd Node.js
+cd node.js
+rm Node.js
+mkdir my-node-app
+cd my-node-app
+npm init -y
+nano app.js
+nano package.json
+nano Dockerfile
+docker build -t my-app .
+nano package.json
+docker build -t my-app .
+docker run -p 3000:3000 my-app
+sudo apt update
+sudo apt install -y wget unzip
+wget https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip
+unzip terraform_1.7.5_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+aws configure
+mkdir terraform-project
+cd terraform-project
+nano main.tf
+df -h
+sudo apt clean
+nano main.tf
+terraform init
+clear
+sudo rm -f /usr/local/bin/terraform
+cd /tmp
+wget https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip
+unzip terraform_1.7.5_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+terraform version
+terraform init
+cd ~/terraform-project
+ls
+terraform init
+df -h
+sudo rm -rf /tmp/*
+sudo apt clean
+sudo rm -rf ~/.cache/*
+sudo apt clean all
+rm -rf .terraform
+rm -rf .terraform.lock.hcl
+terraform init
+sudo rm -rf /tmp/*
+sudo apt clean
+rm -rf ~/.terraform.d
+rm -rf .terraform
+df -h
+terraform init
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+java -version
+clear
+docker hub login
+clear
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+clear
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+sudo systemctl status docker
+docker login
+docker pull subbulakshmi/my-devops-app
+clear
+sudo systemctl status docker
+docker login
+docker images
+subbulakshmisenthilmurugan/my-app
+docker push subbulakshmisenthilmurugan/my-app
+docker run -d -p 80:80 subbulakshmisenthilmurugan/my-app
+sudo systemctl restart docker
+docker run -d -p 80:80 subbulakshmisenthilmurugan/my-app
+clear
+docker system prune -a
+docker pull subbulakshmisenthilmurugan/my-app
+docker run -d -p 80:80 subbulakshmisenthilmurugan/my-app
+clear
+sudo systemctl status jenkins
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+aws configure
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+sudo systemctl staus jenkins
+sudo systemctl status jenkins
+clear
+nano Jenkinsfile
+kubectl get all
+clear
+aws configure
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+kubectl get nodes
+clear
+aws sts get-caller-identity
+clear
+kubectl get nodes
+nano deployment.yaml
+nano service.yaml
+kubectl apply -f deployment.yaml
+clear
+kubectl get nodes
+kubectl get pods
+clear
+kubectl get nodes
+rm -rf ~/.kube/config
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+kubectl get nodes
+clear
+aws configure
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+kubectl get nodes
+clear
+rm -rf ~/.kube
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+kubectl get pods
+kubectl get nodes -o wide
+kubectl describe pod my-app-deployment-68b4469855-94fhx
+eksctl scale nodegroup --cluster my-cluster --nodes 2
+kubectl get nodes
+kubectl describe pod my-app-deployment-68b4469855-94fhx
+kubectl get nodes
+clear
+kubectl get pods
+kubectl get nodes
+clear
+kubectl get pods
+kubectl get nodes
+clear
+kubectl get nods
+kubectl get nodes
+kubectl get pods
+aws eks describe-cluster --name my-cluster --query "cluster.resourcesVpcConfig"
+aws eks describe-cluster   --region ap-south-1   --name my-cluster
+aws configure set region ap-south-1
+kubectl get nodes
+kubectl describe node ip-192-168-37-213.ap-south-1.compute.internal
+kubectl get nodes

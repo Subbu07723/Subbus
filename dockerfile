@@ -1,5 +1,20 @@
-FROM nginx:latest
+# Use official Node image
+FROM node:18
 
-COPY index.html /usr/share/nginx/html/index.html
+# Set working directory
+WORKDIR /app
 
-EXPOSE 80
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy all source code
+COPY . .
+
+# Expose app port
+EXPOSE 3000
+
+# Start the application
+CMD ["npm", "start"]
