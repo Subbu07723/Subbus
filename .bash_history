@@ -529,3 +529,46 @@ aws configure set region ap-south-1
 kubectl get nodes
 kubectl describe node ip-192-168-37-213.ap-south-1.compute.internal
 kubectl get nodes
+kubectl get pods
+kubectl get nodes
+kubectl get pods
+clear
+kubectl get pods
+kubectl get nodes
+clear
+kubectl apply -f deplyment.yaml
+clear
+nano deployment.yaml
+aws eks --region ap-south-1 update-kubeconfig --name my-cluster
+clear
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl get nodes
+kubectl get pods
+clear
+git init
+git add .
+git commit -m "Initial commit"
+clear
+helm install prometheus prometheus-community/kube-prometheus-stack
+sudo apt install helm
+clear
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+helm install prometheus prometheus-community/kube-prometheus-stack
+sudo snap install helm --classic
+kubectl port-forward svc/prometheus-grafana 3000:80
+clear
+kubectl port-forward svc/prometheus-grafana 3000:80
+clear
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+helm install prometheus prometheus-community/kube-prometheus-stack
+helm list
+helm uninstall prometheus
+helm install prometheus prometheus-community/kube-prometheus-stack
+kubectl get svc
+clear
+docker run -d -p 9090:9090 prom/prometheus
+docker run -d -p 3000:3000 grafana/grafana
